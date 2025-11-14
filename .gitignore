@@ -30,8 +30,10 @@ env/
 .venv
 
 # Streamlit
-.streamlit/
-*.streamlit/
+# Keep config.toml for deployment, but ignore cache and secrets
+.streamlit/secrets.toml
+.streamlit/credentials.json
+.streamlit/cache/
 
 # IDEs
 .vscode/
